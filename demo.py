@@ -23,8 +23,3 @@ print(basket1.union(basket2))
 print(basket1.intersection(basket2))
 # 打印不同集合
 print(basket1.difference(basket2))
-
-# t=元祖,t1=元祖嵌套
-t = 1, 2, 3
-t1 = (1, 2, 3, (4, 5, 6))
-print(f"t={t},t1={t1}")
