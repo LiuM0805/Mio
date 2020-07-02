@@ -41,3 +41,12 @@ for k, v in d.items():
 # enumerat=拆分索引
 for i, v in enumerate(d):
     print(f"索引:{i},值:{v}")
+
+# if判断语句
+# a = int(input("输入数字："))
+# if a == 1:
+#     print(a)
+# elif a == 2:
+#     print(a)
+# else:
+#     print("啥也不是")
