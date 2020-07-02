@@ -60,3 +60,9 @@ for i in l:
         print(f"{i}岁是一个测试专家")
     else:
         print(f"{i}岁是一个low")
+
+# while循环
+i = 1
+while i < 6:
+    print(i)
+    i += 1
