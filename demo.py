@@ -28,3 +28,16 @@ print(basket1.difference(basket2))
 t = 1, 2, 3
 t1 = (1, 2, 3, (4, 5, 6))
 print(f"t={t},t1={t1}")
+
+# 词典
+d = {'a': 1, 'b': 2}
+print(d['a'])
+# 添加词典
+d['c'] = 3
+print(d)
+# items=拆分键值对给k,v循环遍历词典
+for k, v in d.items():
+    print(f"{k}:{v}")
+# enumerat=拆分索引
+for i, v in enumerate(d):
+    print(f"索引:{i},值:{v}")
