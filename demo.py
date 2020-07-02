@@ -43,10 +43,20 @@ for i, v in enumerate(d):
     print(f"索引:{i},值:{v}")
 
 # if判断语句
-# a = int(input("输入数字："))
-# if a == 1:
-#     print(a)
-# elif a == 2:
-#     print(a)
-# else:
-#     print("啥也不是")
+a = int(input("输入数字："))
+if a == 1:
+    print(a)
+elif a == 2:
+    print(a)
+else:
+    print("啥也不是")
+
+# for循环语句
+l = [21, 28, 35, 40, 52]
+for i in l:
+    if 30 < i < 45:
+        print(f"{i}岁是一个测试高工")
+    elif i >= 45:
+        print(f"{i}岁是一个测试专家")
+    else:
+        print(f"{i}岁是一个low")
