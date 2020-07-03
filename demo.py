@@ -66,3 +66,11 @@ i = 1
 while i < 6:
     print(i)
     i += 1
+
+
+# 函数
+def fun(a, b=1, *c, **d):
+    print(f"a={a}\nb={b}\nc={c}\nd={d}")
+
+# 调用函数并传参
+fun(1, 2, 3, 4,x=1)
