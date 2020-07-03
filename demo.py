@@ -1,3 +1,6 @@
+# 导入Mio_Package包里面的Module模块
+from Mio_Package.Module import Module
+
 # 字符
 print("Hello World")
 # r：原样输出字符
@@ -102,3 +105,6 @@ class Teacher:
 
 # 无需实例化，直接调用类方法
 Teacher.x(1, 2, 3)
+
+# 包与模块
+Module().Study()
