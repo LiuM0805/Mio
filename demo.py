@@ -88,6 +88,17 @@ class MyClass:
 
 
 # 初始化类，x=类的实例
-x = MyClass
+x = MyClass()
 # 调用实例方法
 x.f()
+
+
+# 类方法
+class Teacher:
+    @classmethod
+    def x(cls, *c):
+        print(c)
+
+
+# 无需实例化，直接调用类方法
+Teacher.x(1, 2, 3)
