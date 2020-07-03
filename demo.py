@@ -43,7 +43,7 @@ for i, v in enumerate(d):
     print(f"索引:{i},值:{v}")
 
 # if判断语句
-a = int(input("输入数字："))
+a = 1
 if a == 1:
     print(a)
 elif a == 2:
@@ -72,5 +72,22 @@ while i < 6:
 def fun(a, b=1, *c, **d):
     print(f"a={a}\nb={b}\nc={c}\nd={d}")
 
+
 # 调用函数并传参
-fun(1, 2, 3, 4,x=1)
+fun(1, 2, 3, 4, x=1)
+
+
+# 类
+class MyClass:
+    # 类变量
+    i = 12345
+
+    # 方法
+    def f(self):
+        print("Hello,World")
+
+
+# 初始化类，x=类的实例
+x = MyClass
+# 调用实例方法
+x.f()
