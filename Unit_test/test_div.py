@@ -27,3 +27,10 @@ def test_div_float():
 
 def test_div_except():
     assert div(10, 'a') == "error"
+
+
+# 预期异常的断言用法
+def test_expect_except():
+    # 括号内输入报错的结果
+    with pytest.raises(SyntaxError):
+        assert div(10, 'a')
