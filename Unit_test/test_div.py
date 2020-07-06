@@ -9,6 +9,16 @@ def test_div_int():
     assert div(10, 5) == 2
 
 
+# 参数化
+@pytest.mark.parametrize("num1,num2,expect", {
+    (10, 5, 2),
+    (8, 2, 4),
+    (20, 10, 2)
+})
+def test_div_param(num1, num2, expect):
+    assert div(num1, num2) == expect
+
+
 # Pytest标签，也叫装饰器，执行它：pytest -m "tab"
 @pytest.mark.tab
 def test_div_float():
