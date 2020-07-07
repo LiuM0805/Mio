@@ -25,6 +25,8 @@ def test_div_float():
     assert div(6.5, 3.2) == 2.03125
 
 
+# 装饰器方式：失败用例重跑；重跑3次，每次间隔5秒
+@pytest.mark.flaky(reruns=3, reruns_delay=5)
 def test_div_except():
     assert div(10, 'a') == "error"
 
