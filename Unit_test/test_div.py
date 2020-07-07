@@ -32,5 +32,5 @@ def test_div_except():
 # 预期异常的断言用法
 def test_expect_except():
     # 括号内输入报错的结果
-    with pytest.raises(SyntaxError):
+    with pytest.raises(TypeError):
         assert div(10, 'a')
