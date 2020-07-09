@@ -14,11 +14,18 @@ class TestTesterhome:
     def teardown_method(self):
         self.driver.quit()
 
+    # 简单封装显示等待方法，需要用到直接调用该方法
+    def wait(self, timeout, method):
+        WebDriverWait(self.driver, timeout).until(method)
+
     def test_testerhome(self):
         self.driver.find_element(By.LINK_TEXT, '社团').click()
-        element=(By.CSS_SELECTOR, '[data-name="霍格沃兹测试学院"]')
+        element = (By.CSS_SELECTOR, '[data-name="霍格沃兹测试学院"]')
         # 显示等待用法
         WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable(element))
         # 传递元祖参数记得拆箱，加*号
         self.driver.find_element(*element).click()
-        self.driver.find_element(By.CSS_SELECTOR, '.topic:nth-child(1) .title>a').click()
+        # 调用显示等待封装方法
+        element_1 = (By.CSS_SELECTOR, '.topic:nth-child(1) .title>a')
+        self.wait(10, expected_conditions.element_to_be_clickable(element_1))
+        self.driver.find_element(*element_1).click()
